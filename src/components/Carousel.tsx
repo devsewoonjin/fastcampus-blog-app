@@ -3,14 +3,13 @@ import { useState } from "react";
 export default function Carousel() {
   const [activeImage, setActiveImage] = useState(1);
   const IMG1 =
-    "https://images.unsplash.com/photo-1508857148929-3a9b41be6c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3538&q=80";
+    "https://images.unsplash.com/photo-1600813068295-48780577465f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3464&q=80";
   const IMG2 =
-    "https://images.unsplash.com/photo-1443466025693-9f6c5d2e8a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3438&q=80";
+    "https://images.unsplash.com/photo-1624467029970-51c6cb117cd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80";
   const IMG3 =
-    "https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3024&q=80";
+    "https://images.unsplash.com/photo-1561363702-e07252da3399?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80";
   return (
     <>
-      {activeImage}
       <div className="carousel">
         <ul className="carousel__slides">
           <input
