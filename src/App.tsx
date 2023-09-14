@@ -1,16 +1,15 @@
-import "./App.css";
-import { Route, Routes, Navigate, Link } from "react-router-dom";
-import Home from "./pages/home";
-import PostList from "./pages/posts";
-import PostDetail from "./pages/posts/detail";
-import PostEdit from "./pages/posts/edit";
-import PostNew from "./pages/posts/new";
-import Profile from "./pages/profile";
-import ProfilePage from "./pages/profile";
-import LoginPage from "./pages/login";
-import SignupPage from "./pages/signup";
-import PostPage from "./pages/posts/detail";
-import PostsPage from "./pages/posts";
+import "App.css";
+import { Route, Routes, Navigate } from "react-router-dom";
+import Home from "pages/home";
+import PostEdit from "pages/posts/edit";
+import PostNew from "pages/posts/new";
+import ProfilePage from "pages/profile";
+import LoginPage from "pages/login";
+import SignupPage from "pages/signup";
+import PostPage from "pages/posts/detail";
+import PostsPage from "pages/posts";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 function App() {
   return (
@@ -41,6 +40,7 @@ function App() {
           <Link to="/signup">Signup Page</Link>
         </li>
       </ul> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<PostsPage />} />
@@ -52,6 +52,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
+      <Footer />
     </>
   );
 }
